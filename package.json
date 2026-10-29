@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-coolprop",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "coolprop — thermophysical fluid properties (PropsSI-style: give two independent state variables, get density, viscosity, conductivity, enthalpy, entropy, phase, ...), computed in-process by CoolProp (open-source, MIT — Bell et al.), not looked up from a tabulated source. Fleet #3349.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-coolprop": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "coolprop"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-coolprop.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/coolprop",
   "pipeworx": {
-    "sourceHash": "v1-ddda03f5ab73e5e96ff9b711e26dab788ba149181c3edfe70cc765b4f441be90",
-    "sourceCommit": "b0a4b8e2f3f5b3a4c3f9f2c9a73f91b20d32ce11"
+    "mode": "gateway",
+    "slug": "coolprop",
+    "gatewaySlug": "coolprop",
+    "sourceHash": "v1-d34d9457fd720935d6253a2cf349d7fd04d0ac06b7e64f9a515e93385a89f3e7",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
