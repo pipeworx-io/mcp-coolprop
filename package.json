@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-coolprop",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "coolprop — thermophysical fluid properties (PropsSI-style: give two independent state variables, get density, viscosity, conductivity, enthalpy, entropy, phase, ...), computed in-process by CoolProp (open-source, MIT — Bell et al.), not looked up from a tabulated source. Fleet #3349.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "coolprop",
     "gatewaySlug": "coolprop",
-    "sourceHash": "v1-d34d9457fd720935d6253a2cf349d7fd04d0ac06b7e64f9a515e93385a89f3e7",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-d17c1c5246f451d5c148d9e7a6fd8deaf4e14733377eadd10b2feebb389be7b8",
+    "sourceCommit": "8cc978183948532674e797c429305c9d8ab2a1c3"
   }
 }
